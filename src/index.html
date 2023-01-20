@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Luhanka Tribe</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+  </head>
+  <body>
+    <div id="wrap">
+      <span>Vie mut scryfaliin missä on listattu lailliset kortit tribestä:</span>
+      <input type="text" id="tribe-input"/>
+      <button onclick="scryfall()">Kiitos. Mennään scryfaliin</button>
+      <script>
+        function scryfall(){
+          const tribe = document.getElementById("tribe-input").value;
+          window.open(`https://scryfall.com/search?q=legal%3Avintage+oracle%3A${tribe}+or+type%3A${tribe}&order=cmc&dir=asc`, "_self")
+        }
+      </script>
+    </div>
+  </body>
+</html>

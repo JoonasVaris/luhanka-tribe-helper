@@ -1,0 +1,14 @@
+{
+  "name": "luhanka-tribal",
+  "version": "0.0.1",
+  "description": "Makes scryfall queries for with given creature type",
+  "author": "Joonas Varis",
+  "license": "ISC",
+  "scripts": {
+    "dev": "rm -rf .cache && parcel \"src/*.html\"",
+    "build": "parcel build \"src/*.html\""
+  },
+  "dependencies": {
+    "parcel": "^2.8.3"
+  }
+}
